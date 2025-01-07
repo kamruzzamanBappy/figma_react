@@ -2,3 +2,16 @@
 body {
   font-family: "Space Grotesk", serif;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}

@@ -1,4 +1,5 @@
 import bannerImg from "../assets/banner.png";
+import LogoCarousel from "./LogoCarousel";
 const Hero = () => {
   return (
     <section className="bg-white pt-12" id="about">
@@ -25,6 +26,9 @@ const Hero = () => {
             <img src={bannerImg} alt="" className="w-full h-auto rounded-md" />
           </div>
         </div>
+
+        {/*Brand logo */}
+        <LogoCarousel />
       </div>
     </section>
   );
