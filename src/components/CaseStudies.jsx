@@ -1,5 +1,7 @@
 import React from "react";
+import { MdOutlineArrowOutward } from "react-icons/md";
 import caseStudies from "../utils/caseStudies";
+ 
 
 const CaseStudies = () => {
   return (
@@ -19,13 +21,14 @@ const CaseStudies = () => {
         </div>
 
         {/*case study  */}
+ 
 <div className="bg-black text-white p-8 rounded-md">
-<div>
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
   {caseStudies.map((study,index) =>(
-<div key={index}>
-  <h3>{study.title}</h3>
-  <p>{study.description}</p>
-  <a href="#" className="text-primary flex items-center hover:underline">Learn More</a>
+<div key={index} className="p-4 border border-gray-700 rounded-md">
+  <h3 className="text-xl font-semibold mb-2">{study.title}</h3>
+  <p className="mb-4">{study.description}</p>
+  <a href="#" className="text-primary flex items-center hover:underline">Learn More <MdOutlineArrowOutward className="ml-2"/></a>
    </div>
   ))}
 </div>
@@ -36,6 +39,7 @@ const CaseStudies = () => {
 
 
 
+ 
       </div>
     </section>
   );
