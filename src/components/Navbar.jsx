@@ -39,7 +39,12 @@ const Navbar = () => {
           <div className="space-x-8 hidden md:flex items-center">
             {menuItems.map((item, index) => (
               <a
-                className="text-black px-2 hover:bg-primary rounded-sm hover:underline underline-offset-4 transition-all  duration-300"
+                onClick={() => handleMenuClick(item.name)}
+                className={` text-black px-2 hover:bg-primary rounded-sm hover:underline underline-offset-4 transition-all  duration-300 ${
+                  activeItem === item.name
+                    ? "bg-primary  text-black underline underline-offset-4"
+                    : ""
+                }`}
                 key={index}
                 href={item.href}
               >
@@ -78,7 +83,10 @@ const Navbar = () => {
           <div className="px-4 pt-2 pb-3 space-y-2 sm:px-3">
             {menuItems.map((item, index) => (
               <a
-                className=" block text-black px-2 hover:bg-primary rounded-sm hover:underline underline-offset-4 transition-all  duration-300"
+                onClick={() => handleMenuClick(item.name)}
+                className={`block text-black px-2 hover:bg-primary rounded-sm hover:underline underline-offset-4 transition-all  duration-300 ${
+                  activeItem === item.name ? "text-primary" : ""
+                }`}
                 key={index}
                 href={item.href}
               >
