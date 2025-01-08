@@ -4,6 +4,7 @@ import CTA from "./components/CTA";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
+import Team from "./components/Team";
 import WorkingProcess from "./components/WorkingProcess";
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <CTA />
       <CaseStudies />
       <WorkingProcess />
+      <Team />
     </div>
   );
 }
