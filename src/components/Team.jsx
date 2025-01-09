@@ -25,7 +25,7 @@ const Team = () => {
         {/*team cards */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {teamData.slice(0, visibleTeam).map((member, index) => (
+          {teamData.slice(0, 6).map((member, index) => (
             <div
               key={index}
               className="bg-white hover:bg-primary rounded-lg border hover:border-primary shadow-lg p-6 cursor-pointer transition-all duration-300"
@@ -64,7 +64,7 @@ const Team = () => {
           <div className="flex justify-end mt-8 w-full">
             <button
               onClick={handleShowMore}
-              className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary hover:text-black transition-all duration-300"
+              className="inline-block px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-primary hover:text-black transition-all duration-300"
             >
               See all team
             </button>
