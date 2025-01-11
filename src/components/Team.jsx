@@ -8,7 +8,7 @@ const Team = () => {
   };
 
   return (
-    <section className="pt-24 pb-12 bg-white">
+    <section className="pt-24 pb-12 bg-white" id="team">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-4 mb-12">
           <div className="flex-shrink-0 bg-primary text-black py-2 px-16 rounded-md">

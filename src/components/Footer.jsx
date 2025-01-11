@@ -49,6 +49,15 @@ const Footer = () => {
         {/* Contact and newsletter */}
 
         <FooterContact />
+
+        <hr className="my-4 border-white mx-4 sm:px-6 lg:px-8" />
+
+        <div className="flex flex-wrap md:gap-4 text-white px-4 sm:px-6 lg:px-8 py-5">
+          <p>Postivus.All Right Reserved.</p>
+          <p className="underline underline-offset-4">
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
       </div>
     </footer>
   );
